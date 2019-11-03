@@ -1,0 +1,24 @@
+{
+  "name": "electron-quick-start-typescript",
+  "version": "0.1.0",
+  "description": "Tray pomodoro timer writen with electron",
+  "scripts": {
+    "build": "tsc && electron-packager . Pomodoro --platform=darwin --arch=x64",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "repository": "https://github.com/A/pomodoro-electron",
+  "main": "./dist/main.js",
+  "author": "Anton Shuvalov",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.0.1",
+    "electron-packager": "^14.1.0",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.0"
+  },
+  "dependencies": {
+    "timer.js": "^1.0.4"
+  }
+}
